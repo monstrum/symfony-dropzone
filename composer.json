@@ -1,0 +1,37 @@
+{
+    "name": "monstrum/symfony-dropzone-bundle",
+    "type": "symfony-bundle",
+    "description": "Easy integration of DropZone into symfony2",
+    "keywords": ["form", "bootstrap", "bootstrap form", "template", "dropzone"],
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "Erwin Eu",
+            "email": "eu.erwin@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-0": {
+            "Monstrum\\SymfonyDropZoneBundle\\": ""
+        }
+    },
+    "target-dir": "Monstrum/SymfonyDropZoneBundle",
+    "require": {
+        "enyo/dropzone": "^4.0"
+    },
+    "suggest":  {
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "Monstrum\\SymfonyDropZoneBundle\\Composer\\ScriptHandler::postInstallSymlinkSymfonyDropZone"
+        ],
+        "post-update-cmd": [
+            "Monstrum\\SymfonyDropZoneBundle\\Composer\\ScriptHandler::postInstallSymlinkSymfonyDropZone"
+        ]
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}
